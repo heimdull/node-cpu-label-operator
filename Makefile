@@ -203,7 +203,7 @@ $(LOCALBIN):
 
 ## Tool Binaries
 KUBECTL ?= kubectl
-KUSTOMIZE ?= kustomize
+KUSTOMIZE ?= $(LOCALBIN)/kustomize
 CONTROLLER_GEN ?= $(LOCALBIN)/controller-gen-$(CONTROLLER_TOOLS_VERSION)
 ENVTEST ?= $(LOCALBIN)/setup-envtest-$(ENVTEST_VERSION)
 GOLANGCI_LINT = $(LOCALBIN)/golangci-lint-$(GOLANGCI_LINT_VERSION)
